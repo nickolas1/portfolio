@@ -9,27 +9,6 @@ $> grunt watch
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        concat: {
-            options: {
-                separator: ';'
-            },
-            dist: {
-                src: ['js/src/*.js'],
-                dest: 'js/build.js'
-            }
-        },
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
-                mangle: true,
-                compress: true
-            },
-            dist: {
-                files: {
-                'js/build.min.js': ['<%= concat.dist.dest %>']
-                }
-            }
-        },
         autoprefixer: {
             multiple_files: {
                 expand: true,
@@ -40,13 +19,11 @@ module.exports = function (grunt) {
         },
         watch: {
             styles: {
-                files: ['css/src/*.css', 'js/src/*.js'],
-                tasks: ['autoprefixer', 'concat', 'uglify'],
+                files: ['css/src/*.css'],
+                tasks: ['autoprefixer'],
             }
         }
     });
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 };

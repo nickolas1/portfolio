@@ -11,12 +11,6 @@
     width: extend-to-zoom;
 }
 
-site__box
-{
-   
-
-}
-
 .site__image
 {
     display: inline-block;
@@ -24,6 +18,11 @@ site__box
     max-width: 100%;
 }
 
+.site__box
+{
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
 .site__description-box
 {
     position: relative;
@@ -32,15 +31,16 @@ site__box
 {
     content: "";
     display: block;
-    padding-top: 25%;
+    /*padding-top: 25%;*/
+    padding-top:0;
 }
 .site__description
 {
-    position: absolute;
+    /*position: absolute;
     top:      0;
     left:     0;
     bottom:   0;
-    right:    0;
+    right:    0;*/
 }
 
 body
@@ -80,7 +80,7 @@ a
     outline: 0;
    /* margin-right: 40px;*/
     margin-right: 1rem;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
     a:hover
     {

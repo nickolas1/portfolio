@@ -9,22 +9,23 @@ window._skel_config = {
 		    range: "*",
 		    containers: 960,
 		    grid: {
-		        gutters: "2%"
+		        gutters: 4
 			}		
 		},
 		narrow: {
 		    range: "-960",
 		    containers: "fluid",
 		    grid: {
-		        gutters: "2%"
-		    }
+		        gutters: 4
+			}
 		},
 		mobile: {
 		    range: "-480",
 		    containers: "fluid",
 		    grid: {
-		        collapse: 2
-		    }
+		        gutters: 4,
+		        collapse: true
+			}
 		}
 	}
 };

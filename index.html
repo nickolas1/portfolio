@@ -1,41 +1,90 @@
 <!DOCTYPE html>
     <head>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-  
-    </head>
-    <body>
-        <h1>nbrowser</h1>
-        <h2>an homage to Oliver Jeffers and the Kepler Space Telescope's graphics officer</h2>
-    
-        <div id="nbodycanvas"></div>
+        <meta charset="utf-8">
         
+        <meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<meta name="viewport" content="initial-scale=1">
         
-        <span class="instruction">pick a theme:</span>
-        <span id="jeffersChooser" class="selector selected" onclick="selectJeffers()">Jeffers cluster</span>
-        <span id="keplerChooser" class="selector" onclick="selectKepler()">Kepler cluster</span>
-        <span id="keplerPlanetChooser" class="selector" onclick="selectKeplerPlanet()">Kepler planets</span>
-        </br>
-        <span id="about">
-            <a href="about.html" data-poptrox="iframe,500x300">what is this?</a>
-        </span>
-        <a href="http://www.oliverjeffers.com/picture-books/how-to-catch-a-star">buy some Oliver Jeffers books</a>
-        <a href="https://github.com/nickolas1/nbrowser">fork me</a>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
             if (!window.jQuery) {
                 document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>');
             }
         </script>
+        <script src="js/skelconfig.js"></script>
+		<script src="js/vendor/skel.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-51em-30px.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="6u">
+                    <div class='site__box'>
+                        <a class='image-link' href='http://rosemoeckel.com'><img class='site__image' src='img/rmfa.jpg'/></a>
+                        <div class='site__description-box'>
+                            <div class='site__description'>
+                                <h2>artist's portfolio</h2>
+                                <p>responsive design, jquery, js frameworks, php, grunt</p>
+                                <span class='site-link'><a href='http://rosemoeckel.com'>live site</a></span>
+                                <span class='source-link'><a href='https://github.com/nickolas1/rosemoeckel'>source</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="6u">
+                    <div class='site__box'>
+                        <a class='image-link' href='http://nickolas1.com/nbrowser'><img class='site__image' src='img/nbrowser.jpg'/></a>
+                        <div class='site__description-box'>
+                            <div class='site__description'>
+                                <h2>decorative browser-based star cluster simulator</h2>
+                                <p>javascript, jquery, d3, grunt </p>
+                                <span class='site-link'><a href='http://nickolas1.com/nbrowser'>live site</a></span>
+                                <span class='source-link'><a href='https://github.com/nickolas1/nbrowser'>source</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="6u">
+                    <div class='site__box'>
+                        <a class='image-link' href='http://nickolas1.com/filamentvelocities'><img class='site__image' src='img/filaments.jpg'/></a>
+                        <div class='site__description-box'>
+                            <div class='site__description'>
+                                <h2>info-dense interactive science communication</h2>
+                                <p>javascript, jquery, js frameworks, d3</p>
+                                <p>(note: the page content was designed for scientist-to-scientist communication, and is somewhat technical)</p>
+                                <span class='site-link'><a href='http://nickolas1.com/filamentvelocities'>live site</a></span>
+                                <span class='source-link'><a href='https://github.com/nickolas1/filamentvelocities'>source</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="6u">
+                    <div class='site__box'>
+                        <a class='image-link' href='http://nickolas1.com/astrocarbon'><img class='site__image' src='img/astrocarbon.jpg'/></a>
+                        <div class='site__description-box'>
+                            <div class='site__description'>
+                                <h2>interactive editorial</h2>
+                                <p>javascript, jquery, js frameworks, d3, grunt preprocessing</p>
+                                <span class='site-link'><a href='http://nickolas1.com/astrocarbon'>live site</a></span>
+                                <span class='source-link'><a href='https://github.com/nickolas1/astrocarbon'>source</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <script type="text/javascript" src="js/vendor/jquery.poptrox.min.js"></script>
-        <script type="text/javascript" src="js/vendor/d3.v3.min.js"></script>
-       <!-- <script type="text/javascript" src="js/starfunctions.js"></script>
-        <script type="text/javascript" src="js/planetfunctions.js"></script>
-        <script type="text/javascript" src="js/themes.js"></script>  
-        <script type="text/javascript" src="js/main.js"></script>  
-        -->
-        <script type="text/javascript" src="js/build.min.js"></script>  
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -45,6 +94,6 @@
             ga('create', 'UA-38044695-1', 'nickolas1.com');
             ga('send', 'pageview');
         </script>
-
+        
     </body>
 </html>
